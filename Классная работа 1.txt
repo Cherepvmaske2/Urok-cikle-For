@@ -1,0 +1,9 @@
+temperature = float(input())
+count = 0
+count_week = 0
+while temperature < 22.0:
+    count += 1
+    if count % 7 == 0:
+        count_week += 1
+    temperature = float(input())
+print(count_week)

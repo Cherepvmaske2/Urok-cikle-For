@@ -1,0 +1,7 @@
+number = int(input())
+if number == 0:
+    print(1)
+else:
+    for i in range(number - 1):
+        number = number * (i + 1)
+    print(number)

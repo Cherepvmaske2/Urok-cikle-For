@@ -1,0 +1,11 @@
+number = int(input())
+dividers = '1'
+while str(number) not in dividers:
+    for i in range(2, number + 1):
+        if number % i == 0:
+            dividers += ' ' + str(i)
+print(dividers)
+if '1 ' + str(number) == dividers:
+    print('ПРОСТОЕ')
+else:
+    print('НЕТ')

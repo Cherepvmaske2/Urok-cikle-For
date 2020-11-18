@@ -1,0 +1,4 @@
+phrase = input()
+quantity = int(input())
+for i in range(quantity):
+    print(phrase, end='\n')

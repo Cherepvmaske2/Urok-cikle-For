@@ -1,0 +1,6 @@
+centimeters = int(input())
+quantity = -int(input())
+answer = ''
+for i in range(centimeters, 0, quantity):
+    print(i, end=' ')
+print(0)

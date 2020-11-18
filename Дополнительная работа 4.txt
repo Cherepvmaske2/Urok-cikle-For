@@ -1,0 +1,15 @@
+kettle = int(input())
+cup = int(input())
+quantity = int(input())
+count = 0
+for i in range(quantity):
+    count += 1
+    if kettle > 0 and kettle >= cup:
+        kettle -= cup
+        print(f'Чашечка {count} полная. В чайнике осталось {kettle}.')
+    elif kettle == 0:
+        print(f'Чашечка {count} пустая. В чайнике осталось {kettle}.')
+    elif kettle < cup:
+        kettle = 0
+        print(f'Чашечка {count} неполная. В чайнике осталось {kettle}.')
+
